@@ -17,7 +17,6 @@ $valorB=$_POST['valorB'];
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +26,7 @@ $valorB=$_POST['valorB'];
 </head>
 <body>
     <form action="ejemplo9.php" method="post">
-	Valor A:
+	Valor A, esto fue un cambio:
         <input type="text" name="valorA" id="">
 	<br/>
 	Valor B:
