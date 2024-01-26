@@ -1,4 +1,4 @@
-<! -- Operadores relacionales  --!>
+<! -- If else PHP -- !>
 
 <?php
 
@@ -11,7 +11,9 @@ $valorB=$_POST['valorB'];
 	if($valorA != $valorB)
 	{
 		echo "El valor de A es diferente a B";
-	}
+	}else{
+        echo "El valor de A es igual a B";
+    }
 }
 
 
@@ -26,7 +28,7 @@ $valorB=$_POST['valorB'];
     <title>Operadores aritmeticos</title>
 </head>
 <body>
-    <form action="ejemplo9.php" method="post">
+    <form action="ejemplo12.php" method="post">
 	Valor A:
         <input type="text" name="valorA" id="">
 	<br/>
