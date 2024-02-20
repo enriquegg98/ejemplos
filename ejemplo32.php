@@ -4,6 +4,7 @@
 <! -- Valores select option -- !>
 <! -- Valores textarea 4:20: -- !>
 
+
 <?php
 
 $txtNombre = "";
@@ -15,6 +16,10 @@ $chkcss = "";
 
 $lsAnime = "";
 
+$txtComentario = "";
+
+
+
 if ($_POST)
 {
     $txtNombre = (isset($_POST['txtNombre']))?$_POST['txtNombre']:""; // If ternario
@@ -25,6 +30,12 @@ if ($_POST)
     $chkcss = (isset($_POST['chkcss'])=="si")?"checked":"";
 
     $lsAnime = (isset($_POST['lsAnime']))?$_POST['lsAnime']: "";
+
+    $txtComentario = (isset($_POST['txtComentario']))?$_POST['txtComentario']:"";
+
+    // Instrucción de insertar
+    // Rutina de algún cálculo
+    // Aqui puedes alterar esos valores para mostrar diferentes valores
 }
 
 ?>
@@ -50,6 +61,7 @@ if ($_POST)
     <strong>Te gusta el anime: </strong>
     <?php echo $lsAnime; ?>
     <br/>
+    <strong>Tu mensaje es </strong><?php echo $txtComentario; ?>
     <?php } ?>
 
     <form action="ejemplo32.php" method="post">
@@ -78,6 +90,14 @@ if ($_POST)
 
         </select>
         <br/>
+
+    ¿Tienes alguna duda?<br/>
+    <textarea name="txtComentario" id="" cols="30" rows="10">
+
+<?php echo $txtComentario; ?>
+
+    </textarea>
+    <br/>
 
         <input type="submit" value="Enviar información">
 
